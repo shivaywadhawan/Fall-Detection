@@ -1,7 +1,7 @@
-Fall Detection by  Shivay Wadhawan,Michael Yang, Ali Naveed
+## Fall Detection by Shivay Wadhawan,Michael Yang, Ali Naveed
 
 Our project is focused on fall detection using a wearable sensor. With a user wearing a sensor on a specific location (e.g. the chest), we attempt to detect when they take a sudden fall. Fall detection seemed like a natural extension to the IMU gesture data collection done in class. We were familiar with machine learning algorithms, so we can use collected motion data from falls to create a model to determine whether or not a specific motion was a fall. Fall detection is an important topic with regard to human safety- if someone is alone and has nobody to assist them when they take a fall, an automated system that detects it could call emergency services to the scene. Many populations may benefit from such a system, like the elderly or solo travelers. Methods used for fall detection may also prove useful for discerning other movements, such as crash detection or sudden stops, which can be applied in many other fields.
 
 Our system consists of an ESP32-S3 microcontroller that reads from an MPU6050 IMU. The ESP32 is powered by a small portable battery, which helps eliminate some of the constraints of a wired power supply, making the device more mobile and sampling falls easier. The MPU6050 IMU contains an accelerometer and gyroscope, the measurements for which are communicated to the microcontroller via I2C, processed, and then sent wirelessly via WiFi to our computers to be output as data files. Four fall directions are recorded- forward, backward, left and right. We feed these data samples into a machine learning model to train it to predict when certain movements are falls or not.
 
- Please read 528 Final Report for the complete report.
+## Please read 528 Final Report for the complete report.
